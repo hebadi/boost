@@ -6,7 +6,7 @@
 #    By: hebadi <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/10 17:34:13 by hebadi            #+#    #+#              #
-#    Updated: 2018/09/17 16:37:20 by hebadi           ###   ########.fr        #
+#    Updated: 2018/09/17 16:56:20 by hebadi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,16 +37,13 @@ $(NAME):
 	ar rc $(NAME) $(OUT)
 	ranlib $(NAME)
 
-run: 
-	gcc -Wall -Wextra -Werror -o program main.c $(NAME) -I $(INCLUDES)
 
-all: $(NAME) run
+all: $(NAME)
 
 clean:
 	rm $(OUT) 
 
 fclean:	clean	
 	rm -f $(NAME)
-	rm program
 
 re:	fclean	all

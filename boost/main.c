@@ -6,7 +6,7 @@
 /*   By: hebadi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 18:26:15 by hebadi            #+#    #+#             */
-/*   Updated: 2018/09/14 18:59:04 by hebadi           ###   ########.fr       */
+/*   Updated: 2018/09/17 20:41:07 by hebadi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int		main(int argc, char **argv)
 		printf("\narg length = %d\n", ft_strlen(argv[1]));
 		printf("\ntoupper = %c\n", ft_toupper('b'));
 		printf("\ntolower = %c\n", ft_tolower('D'));
-		printf("\nft_isdigit = %d\n", ft_isdigit(8));
+		printf("\nft_isdigit = %d\n", ft_isdigit(1));
 		printf("\nft_strcmp = %d\n", ft_strcmp("hello", "world"));
 		printf("\nft_strchr = %c\n", *ft_strchr("hello", '\0'));
 		char strr[6] = "world";
